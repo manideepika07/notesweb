@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Notes Taking App</title>
+  <link rel="stylesheet" href="notestakingwebapp.css">
+</head>
+<body>
+  <header>
+    <h1>Notes Taking App</h1>
+    <button id="toggle-dark-mode">Dark Mode</button>
+  </header>
+  <main>
+    <div class="controls">
+      <input type="text" id="search-bar" placeholder="Search notes...">
+    </div>
+    <form id="note-form">
+      <textarea id="note-input" placeholder="Write your note here..." required></textarea>
+      <label>
+        Priority:
+        <select id="priority-select">
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </label>
+      <button type="submit">Add Note</button>
+    </form>
+    <div id="notes-container"></div>
+  </main>
+  <script src="notestakingwebapp.js"></script>
+</body>
+</html>

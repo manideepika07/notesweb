@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+  }  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+  } 
+  button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  main {
+    padding: 20px;
+  }  
+  .controls {
+    margin-bottom: 20px;
+  }
+  
+  #search-bar {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #note-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  #note-input {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #priority-select {
+    padding: 5px;
+  }
+  
+  #notes-container {
+    margin-top: 20px;
+    display: grid;
+    gap: 10px;
+  }
+  
+  .note {
+    padding: 10px;
+    border-radius: 5px;
+    background: white;
+    border: 1px solid #ccc;
+    position: relative;
+  }
+  
+  .note .priority {
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  
+  .note .actions {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    display: flex;
+    gap: 5px;
+  }
+  
+  .dark-mode {
+    background: #333;
+    color: #f4f4f4;
+  }
+  
+  .dark-mode .note {
+    background: #444;
+    color: #f4f4f4;
+    border-color: #555;
+  }
+  
